@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Styles - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">Alex Styles</div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" class="nav-link" data-tooltip="Learn about my background">About</a></li>
+                <li><a href="#portfolio" class="nav-link" data-tooltip="View my projects">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link" data-tooltip="Get in touch">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Hi, I'm Alex Styles</h1>
+            <p class="hero-subtitle">Creative Developer & Designer</p>
+            <a href="#portfolio" class="cta-button">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello! I'm Alex Styles, a passionate creative developer and designer with a keen eye for detail and a love for crafting beautiful, functional digital experiences.</p>
+                    <p>With expertise in modern web technologies, I specialize in creating responsive, user-friendly websites and applications that not only look great but also deliver exceptional performance.</p>
+                    <div class="skills">
+                        <h3>Skills & Expertise</h3>
+                        <ul class="skills-list">
+                            <li>HTML5 & CSS3</li>
+                            <li>JavaScript & TypeScript</li>
+                            <li>React & Vue.js</li>
+                            <li>UI/UX Design</li>
+                            <li>Responsive Design</li>
+                            <li>Performance Optimization</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <p class="section-subtitle">Check out some of my recent projects</p>
+            <div class="portfolio-grid">
+                <article class="project-card" data-project="1">
+                    <div class="project-image">
+                        <div class="placeholder-image">Project 1</div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">A modern, responsive e-commerce solution with seamless user experience and secure payment integration.</p>
+                        <button class="project-link" data-project-id="1">View Details →</button>
+                    </div>
+                </article>
+
+                <article class="project-card" data-project="2">
+                    <div class="project-image">
+                        <div class="placeholder-image">Project 2</div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Creative Agency Website</h3>
+                        <p class="project-description">Bold and dynamic website showcasing creative work with stunning animations and interactive elements.</p>
+                        <button class="project-link" data-project-id="2">View Details →</button>
+                    </div>
+                </article>
+
+                <article class="project-card" data-project="3">
+                    <div class="project-image">
+                        <div class="placeholder-image">Project 3</div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Dashboard Application</h3>
+                        <p class="project-description">Intuitive data visualization dashboard with real-time analytics and customizable widgets.</p>
+                        <button class="project-link" data-project-id="3">View Details →</button>
+                    </div>
+                </article>
+
+                <article class="project-card" data-project="4">
+                    <div class="project-image">
+                        <div class="placeholder-image">Project 4</div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Mobile App Design</h3>
+                        <p class="project-description">Clean and modern mobile app interface focusing on user experience and accessibility.</p>
+                        <button class="project-link" data-project-id="4">View Details →</button>
+                    </div>
+                </article>
+
+                <article class="project-card" data-project="5">
+                    <div class="project-image">
+                        <div class="placeholder-image">Project 5</div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Brand Identity System</h3>
+                        <p class="project-description">Complete brand identity package including logo, color palette, and design guidelines.</p>
+                        <button class="project-link" data-project-id="5">View Details →</button>
+                    </div>
+                </article>
+
+                <article class="project-card" data-project="6">
+                    <div class="project-image">
+                        <div class="placeholder-image">Project 6</div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Social Media Platform</h3>
+                        <p class="project-description">Engaging social platform with real-time messaging and content sharing capabilities.</p>
+                        <button class="project-link" data-project-id="6">View Details →</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Have a project in mind? Let's work together!</p>
+            <div class="contact-content">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Alex Styles. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="social-link">LinkedIn</a>
+                <a href="#" class="social-link">GitHub</a>
+                <a href="#" class="social-link">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Details Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+        // ===== Mobile Navigation =====
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            document.body.classList.toggle('menu-open');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                document.body.classList.remove('menu-open');
+            });
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                document.body.classList.remove('menu-open');
+            }
+        });
+
+        // ===== Project Modal =====
+        const modal = document.getElementById('projectModal');
+        const modalBody = document.getElementById('modalBody');
+        const modalClose = document.getElementById('modalClose');
+        const modalOverlay = document.getElementById('modalOverlay');
+        const projectLinks = document.querySelectorAll('.project-link');
+
+        // Project data
+        const projectData = {
+            '1': {
+                title: 'E-Commerce Platform',
+                description: 'A comprehensive e-commerce solution built with modern web technologies.',
+                details: [
+                    'Built with React and Node.js for optimal performance',
+                    'Integrated Stripe payment gateway for secure transactions',
+                    'Responsive design that works seamlessly across all devices',
+                    'Advanced product filtering and search functionality',
+                    'Real-time inventory management system',
+                    'Customer review and rating system'
+                ],
+                technologies: ['React', 'Node.js', 'MongoDB', 'Stripe API', 'Redux'],
+                link: '#'
+            },
+            '2': {
+                title: 'Creative Agency Website',
+                description: 'A bold and dynamic website showcasing creative portfolio work.',
+                details: [
+                    'Custom animations and interactive elements',
+                    'Parallax scrolling effects for engaging user experience',
+                    'Portfolio showcase with lightbox gallery',
+                    'Contact form with email integration',
+                    'SEO-optimized for better search visibility',
+                    'Fast loading times with optimized assets'
+                ],
+                technologies: ['HTML5', 'CSS3', 'JavaScript', 'GSAP', 'PHP'],
+                link: '#'
+            },
+            '3': {
+                title: 'Dashboard Application',
+                description: 'An intuitive data visualization dashboard with real-time analytics.',
+                details: [
+                    'Interactive charts and graphs using D3.js',
+                    'Real-time data updates via WebSocket connection',
+                    'Customizable dashboard widgets',
+                    'Export data in multiple formats (PDF, CSV, Excel)',
+                    'User role management and permissions',
+                    'Dark mode support for reduced eye strain'
+                ],
+                technologies: ['Vue.js', 'D3.js', 'WebSocket', 'Python', 'PostgreSQL'],
+                link: '#'
+            },
+            '4': {
+                title: 'Mobile App Design',
+                description: 'Clean and modern mobile app interface focusing on user experience.',
+                details: [
+                    'Intuitive navigation and user-friendly interface',
+                    'Accessibility features for inclusive design',
+                    'Smooth animations and micro-interactions',
+                    'Offline functionality with local data caching',
+                    'Push notification integration',
+                    'Biometric authentication support'
+                ],
+                technologies: ['React Native', 'Firebase', 'Figma', 'Redux'],
+                link: '#'
+            },
+            '5': {
+                title: 'Brand Identity System',
+                description: 'Complete brand identity package with comprehensive design guidelines.',
+                details: [
+                    'Logo design with multiple variations',
+                    'Comprehensive color palette and usage guidelines',
+                    'Typography system and font pairings',
+                    'Brand voice and messaging guidelines',
+                    'Marketing collateral templates',
+                    'Digital and print asset specifications'
+                ],
+                technologies: ['Adobe Illustrator', 'Adobe Photoshop', 'Figma', 'InDesign'],
+                link: '#'
+            },
+            '6': {
+                title: 'Social Media Platform',
+                description: 'Engaging social platform with real-time messaging and content sharing.',
+                details: [
+                    'Real-time messaging with end-to-end encryption',
+                    'Photo and video sharing capabilities',
+                    'User profiles with customizable themes',
+                    'News feed algorithm for personalized content',
+                    'Group creation and management features',
+                    'Advanced privacy and security settings'
+                ],
+                technologies: ['Angular', 'Firebase', 'Socket.io', 'AWS', 'TypeScript'],
+                link: '#'
+            }
+        };
+
+        // Open modal when project link is clicked
+        projectLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const projectId = link.getAttribute('data-project-id');
+                const project = projectData[projectId];
+                
+                if (project) {
+                    // Build modal content
+                    let detailsHTML = '<ul class="modal-details-list">';
+                    project.details.forEach(detail => {
+                        detailsHTML += `<li>${detail}</li>`;
+                    });
+                    detailsHTML += '</ul>';
+                    
+                    let techHTML = '<div class="modal-technologies">';
+                    project.technologies.forEach(tech => {
+                        techHTML += `<span class="tech-badge">${tech}</span>`;
+                    });
+                    techHTML += '</div>';
+                    
+                    modalBody.innerHTML = `
+                        <h2 class="modal-title">${project.title}</h2>
+                        <p class="modal-description">${project.description}</p>
+                        <h3 class="modal-subtitle">Key Features</h3>
+                        ${detailsHTML}
+                        <h3 class="modal-subtitle">Technologies Used</h3>
+                        ${techHTML}
+                    `;
+                    
+                    modal.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                }
+            });
+        });
+
+        // Close modal
+        const closeModal = () => {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        };
+
+        modalClose.addEventListener('click', closeModal);
+        modalOverlay.addEventListener('click', closeModal);
+        
+        // Close modal on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('active')) {
+                closeModal();
+            }
+        });
+
+        // ===== Smooth Scrolling =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && href.length > 1) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+
+        // ===== Scroll Animations =====
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe sections for animation
+        document.querySelectorAll('.about-section, .portfolio-section, .contact-section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // ===== Form Enhancement =====
+        const contactForm = document.querySelector('.contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                // Get form values
+                const formData = new FormData(contactForm);
+                const submitButton = contactForm.querySelector('.submit-button');
+                
+                // Show loading state
+                submitButton.textContent = 'Sending...';
+                submitButton.disabled = true;
+                
+                // Simulate form submission (replace with actual API call)
+                setTimeout(() => {
+                    submitButton.textContent = 'Message Sent! ✓';
+                    submitButton.style.backgroundColor = '#10b981';
+                    
+                    // Reset form
+                    contactForm.reset();
+                    
+                    // Reset button after 3 seconds
+                    setTimeout(() => {
+                        submitButton.textContent = 'Send Message';
+                        submitButton.disabled = false;
+                        submitButton.style.backgroundColor = '';
+                    }, 3000);
+                }, 1500);
+            });
+        }
+
+        // ===== Header Scroll Effect =====
+        let lastScroll = 0;
+        const header = document.querySelector('.header');
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            
+            lastScroll = currentScroll;
+        });
+    </script>
+</body>
+</html>
